@@ -1,0 +1,12 @@
+.size {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.size > p {
+    margin: auto;    
+    text-align: center;
+}

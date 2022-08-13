@@ -1,0 +1,8 @@
+.footer {
+  padding: 20px 0;
+  color: white;
+  background-color: black;
+}
+.footerLinks > * {
+  text-align: start;
+}

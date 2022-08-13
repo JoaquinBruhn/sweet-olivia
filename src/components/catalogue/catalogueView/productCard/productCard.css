@@ -1,0 +1,29 @@
+.cardBody {
+  text-align: left;
+}
+
+.cardLink {
+  color: black;
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  color: black;
+}
+
+.cardImg {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: .5s ease-in-out;
+}
+
+.cardName {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cardPrice {
+  font-weight: bold;
+}

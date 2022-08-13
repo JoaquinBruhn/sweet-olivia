@@ -1,0 +1,21 @@
+.listBody {
+  width: 100%;
+}
+
+.listFilter {
+  background-color: rgba(0, 0, 0, 0.83);
+  color: white;
+}
+
+.filter {
+  width: 20%;
+  margin: 0;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.listItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
