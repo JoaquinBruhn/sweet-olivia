@@ -2,7 +2,8 @@ const productData = [
   {
     title: "Remera",
     category: "remeras",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 11,
     picture: {
       mobile: "",
@@ -16,7 +17,8 @@ const productData = [
   {
     title: "Pantalones",
     category: "jeans",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 22,
     picture: {
       mobile: "",
@@ -31,7 +33,8 @@ const productData = [
   {
     title: "Medias",
     category: "otros",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 33,
     picture: {
       mobile: "",
@@ -45,7 +48,8 @@ const productData = [
   {
     title: "Buzo",
     category: "buzos",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 44,
     picture: {
       mobile: "",
@@ -59,7 +63,8 @@ const productData = [
   {
     title: "Zapatillas",
     category: "otros",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 55,
     picture: {
       mobile: "",
@@ -73,7 +78,8 @@ const productData = [
   {
     title: "Bufanda",
     category: "otros",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 66,
     picture: {
       mobile: "",
@@ -87,7 +93,8 @@ const productData = [
   {
     title: "Guantes de cuero",
     category: "otros",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 77,
     picture: {
       mobile: "",
@@ -101,7 +108,8 @@ const productData = [
   {
     title: "Cinturon",
     category: "otros",
-    size: ["xs", "s", "M"],
+    size: ["XS", "S", "M"],
+    color: ["#6BFF33", "#F20505", "#05F2EB"],
     price: 88,
     picture: {
       mobile: "",
@@ -114,10 +122,9 @@ const productData = [
   },
 ];
 
-
 export const getProduct = (title) => {
-  const searchedProd = productData.find(prod => prod.title === title);
+  const searchedProd = productData.find((prod) => prod.title === title);
   return searchedProd;
-}
+};
 
 export default productData;
