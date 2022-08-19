@@ -1,12 +1,29 @@
-.size {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid black;
-    text-align: center;
+.sampleCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px 0 0;
+  border-radius: 50px;
+  border: 1px solid black;
 }
 
-.size > p {
-    margin: auto;    
-    text-align: center;
+.sampleCircle > p {
+  margin: auto;
+  text-align: center;
+}
+
+.productInfo {
+  padding: 0 5%;
+}
+
+.productInfo > * {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.purchaseButon {
+  width: 40%;
+  text-align: center;
 }
