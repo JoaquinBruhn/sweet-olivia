@@ -1,4 +1,3 @@
-// import { Container, Row } from "react-bootstrap";
 import "./productCard.css";
 import { Link } from "react-router-dom";
 
