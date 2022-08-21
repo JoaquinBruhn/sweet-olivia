@@ -22,8 +22,8 @@ const Footer = () => {
           </div>
         </Col>
         <Col xs={{ span: 1, offset: 7 }}>
-          <h6>whasaap</h6>
-          <h6>instagram</h6>
+          <h6>a</h6>
+          <h6>a</h6>
         </Col>
       </Row>
       <Row className="reservedRights">
