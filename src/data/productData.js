@@ -3,7 +3,9 @@ const productData = [
     title: "Remera",
     category: "remeras",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 11,
     picture: {
       mobile: "",
@@ -18,7 +20,9 @@ const productData = [
     title: "Pantalones",
     category: "jeans",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 22,
     picture: {
       mobile: "",
@@ -34,7 +38,9 @@ const productData = [
     title: "Medias",
     category: "otros",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 33,
     picture: {
       mobile: "",
@@ -49,7 +55,9 @@ const productData = [
     title: "Buzo",
     category: "buzos",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 44,
     picture: {
       mobile: "",
@@ -64,7 +72,9 @@ const productData = [
     title: "Zapatillas",
     category: "otros",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 55,
     picture: {
       mobile: "",
@@ -79,7 +89,9 @@ const productData = [
     title: "Bufanda",
     category: "otros",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 66,
     picture: {
       mobile: "",
@@ -94,7 +106,9 @@ const productData = [
     title: "Guantes de cuero",
     category: "otros",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 77,
     picture: {
       mobile: "",
@@ -109,7 +123,9 @@ const productData = [
     title: "Cinturon",
     category: "otros",
     size: ["XS", "S", "M"],
-    color: ["#6BFF33", "#F20505", "#05F2EB"],
+    color: [{colorName:"Verde",colorValue:"#6BFF33"}
+  ,{colorName:"Rojo",colorValue:"#F20505"},
+  {colorName:"Celeste",colorValue:"#05F2EB"}],
     price: 88,
     picture: {
       mobile: "",
@@ -144,5 +160,8 @@ export const getProduct = (title) => {
   const searchedProd = productData.find((prod) => prod.title === title);
   return searchedProd;
 };
+
+export const number = "+54 1141911892"
+
 
 export default productData;

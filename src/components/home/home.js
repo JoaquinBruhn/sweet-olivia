@@ -11,7 +11,7 @@ const Home = () => {
         <Carousel>
           {mainSlider.map((el) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item key={el.title}>
                 <img className="d-block w-100" src={el.image} alt={el.title} />
               </Carousel.Item>
             );
@@ -22,7 +22,6 @@ const Home = () => {
         <Row xs={2} lg={3}>
           {cats.map((el) => {
             const catImg = productData.find((prod) => el === prod.category);
-            console.log(catImg);
             return (
               <Col className="homeCat" key={catImg.title}>
                 <img src={catImg.picture.desktop} alt={catImg.title}></img>
