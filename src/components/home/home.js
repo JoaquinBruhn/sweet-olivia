@@ -24,14 +24,18 @@ const Home = () => {
             const catImg = productData.find((prod) => el === prod.category);
             return (
               <Col className="homeCat" key={catImg.title}>
-                <img src={catImg.picture.desktop} alt={catImg.title}></img>
+                <div style={{ backgroundImage: `url(${catImg.picture.desktop})` }}>
+                  <div className="mask">
+                    <p>{catImg.title}</p>
+                  </div>
+                </div>
               </Col>
             );
           })}
         </Row>
       </Container>
       <Container className="homeHowTo">
-        <Row className="howToSite">
+        <Row className="howToSite" id="howToSite">
           <Col>
             <div>
               <h2>1</h2>
@@ -63,7 +67,7 @@ const Home = () => {
             </p>
           </Col>
         </Row>
-        <Row className="howToBuy">
+        <Row className="howToBuy" id="howToBuy">
           <Col>
             <span></span>
             <div></div>

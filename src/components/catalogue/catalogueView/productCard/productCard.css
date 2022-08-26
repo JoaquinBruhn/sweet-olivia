@@ -12,11 +12,11 @@
 }
 
 .cardImg {
-  height: 350px;
-  width: 100%;
+  width: 300px;
+  height: 400px;
   background-size: cover;
   background-position: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .cardName {

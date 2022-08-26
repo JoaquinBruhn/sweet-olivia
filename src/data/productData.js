@@ -118,6 +118,7 @@ const productData = [
     title: "Guantes de cuero",
     category: "otros",
     size: ["XS", "S", "M"],
+    discount: false,
     color: [
       { colorName: "Verde", colorValue: "#6BFF33" },
       { colorName: "Rojo", colorValue: "#F20505" },
