@@ -63,7 +63,7 @@ const Home = () => {
             </p>
           </Col>
         </Row>
-        <Row className="HowToBuy">
+        <Row className="howToBuy">
           <Col>
             <span></span>
             <div></div>

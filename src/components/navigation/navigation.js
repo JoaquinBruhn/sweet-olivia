@@ -3,27 +3,26 @@ import { Navbar } from "react-bootstrap";
 import "./navigation.css";
 
 const Navigation = () => {
-
   return (
     <div className="header ">
-      <h1>TITULO</h1>
-      
+      <div className="sitTitle">
+        <h1>TITULO</h1>
+      </div>
+
       <Navbar className="mainNav d-flex">
-            <NavLink to="/" className={({ isActive }) => isActive ? 'selected-navlink navlink' : 'navlink'}>
-              Home
-            </NavLink>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
+          Home
+        </NavLink>
+        <a href="#howToSite" className="navlink">
+          Como comprar
+        </a>
+        <a href="#aboutUs" className="navlink">
+          Nosotros
+        </a>
 
-            <NavLink to="/nosotros" className={({ isActive }) => isActive ? 'selected-navlink navlink' : 'navlink'}>
-              Nosotros
-            </NavLink>
-
-            <NavLink to="/comoComprar" className={({ isActive }) => isActive ? 'selected-navlink navlink' : 'navlink'}>
-              Como comprar
-            </NavLink>
-            
-            <NavLink to="/catalogo" className={({ isActive }) => isActive ? 'selected-navlink navlink' : 'navlink'}>
-              Catálogo
-            </NavLink>
+        <NavLink to="/catalogo" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
+          Catálogo
+        </NavLink>
       </Navbar>
     </div>
   );
