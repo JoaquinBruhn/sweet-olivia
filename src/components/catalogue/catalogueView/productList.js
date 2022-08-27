@@ -2,9 +2,25 @@ import ProductCard from "./productCard/ProductCard";
 import "./productList.css";
 import productData from "../../../data/productData";
 import { useState } from "react";
+import SearchBar from "../../searchBar/SearchBar.js"
+
 
 const ProductList = () => {
   const [category, setCategory] = useState("");
+  const [prodList,setProdList] = useState(productData)
+
+  // const categoryFilter = (cat) => {
+  //   setCategory(cat);
+
+  //   if (category === "") {
+  //     setProdList(productData)
+  //   } else {
+  //      setFilteredList(productData.filter((el) =>el.category === category))
+  //   }
+  // }
+
+  
+
   const categoryFilter = () => {
     if (category === "") {
       return productData;
@@ -15,6 +31,9 @@ const ProductList = () => {
   };
 
   return (
+
+    
+
     <div className="catalogue">
       <div className="listFilter d-flex">
         <p
@@ -66,7 +85,7 @@ const ProductList = () => {
           Otros
         </p>
       </div>
-
+      <SearchBar/>
       <div className="container my-5">
         {categoryFilter().length > 0 ? (
           <div className="listItems">
