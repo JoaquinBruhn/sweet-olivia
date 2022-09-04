@@ -2,14 +2,18 @@ import ProductCard from "./productCard/ProductCard";
 import "./productList.css";
 import productData from "../../../data/productData";
 import { useState } from "react";
+import SearchBar from "../../searchBar/SearchBar.js"
+
 
 const ProductList = () => {
   const [category, setCategory] = useState("");
+  const [search, setSearch] = useState(productData);
+  
   const categoryFilter = () => {
-    if (category === "") {
-      return productData;
+    if(category === "") {
+      return search
     } else {
-      let filtered = productData.filter((el) => el.category === category);
+      let filtered = search.filter((el) => el.category === category);
       return filtered;
     }
   };
@@ -66,7 +70,7 @@ const ProductList = () => {
           Otros
         </p>
       </div>
-
+      <SearchBar search={search} setSearch={setSearch}/>
       <div className="container my-5">
         {categoryFilter().length > 0 ? (
           <div className="listItems">

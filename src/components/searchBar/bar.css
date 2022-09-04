@@ -1,0 +1,20 @@
+.searchHeader {
+  display: flex;
+}
+.searchText {
+  margin-right: 10px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#searchBox {
+  height: 25px;
+}
+#searchBox[placeholder] {
+  line-height: 25px;
+  font-size: 25px;
+}
+#itemList {
+  min-height: 260px;
+}
