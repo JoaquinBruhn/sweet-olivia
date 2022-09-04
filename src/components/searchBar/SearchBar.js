@@ -1,22 +1,19 @@
 import React, {useState} from 'react'
 import productData from "../../data/productData"
 
-function SearchBar() {
-  const [search, setSearch] = useState(productData);
+function SearchBar({search,setSearch}) {
   const [showResult, setShowResult] = useState("")
 
   const filterBySearch = (event) => {
-    // Access input value
     const query = event.target.value;
     setShowResult(query)
-    // Create copy of item list
     let updatedList = [...productData];
-    // Include all elements which includes the search query
-    updatedList = updatedList.filter((item) => {
-      console.log(item);
-      return item.title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-    });
-    // Trigger render with updated values
+    if(query === "") {
+      setSearch(productData)
+    } 
+      updatedList = updatedList.filter((item) => {
+        return item.title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+      });
     setSearch(updatedList);
   };
 
@@ -25,16 +22,6 @@ function SearchBar() {
     <div className='searchHeader'>
       <div className='searchText'>Search:</div>
       <input id= "searchBox" onChange={filterBySearch}/>
-      </div>
-      <div id='itemList'>
-        <ul> 
-          {
-            showResult == "" 
-            ? null 
-            : search.map((el)=> {
-              return <li key={el.title}>{el.title}</li>
-            })}
-        </ul>
       </div>
       </>
   )

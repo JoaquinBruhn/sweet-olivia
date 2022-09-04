@@ -7,33 +7,18 @@ import SearchBar from "../../searchBar/SearchBar.js"
 
 const ProductList = () => {
   const [category, setCategory] = useState("");
-  const [prodList,setProdList] = useState(productData)
-
-  // const categoryFilter = (cat) => {
-  //   setCategory(cat);
-
-  //   if (category === "") {
-  //     setProdList(productData)
-  //   } else {
-  //      setFilteredList(productData.filter((el) =>el.category === category))
-  //   }
-  // }
-
+  const [search, setSearch] = useState(productData);
   
-
   const categoryFilter = () => {
-    if (category === "") {
-      return productData;
+    if(category === "") {
+      return search
     } else {
-      let filtered = productData.filter((el) => el.category === category);
+      let filtered = search.filter((el) => el.category === category);
       return filtered;
     }
   };
 
   return (
-
-    
-
     <div className="catalogue">
       <div className="listFilter d-flex">
         <p
@@ -85,7 +70,7 @@ const ProductList = () => {
           Otros
         </p>
       </div>
-      <SearchBar/>
+      <SearchBar search={search} setSearch={setSearch}/>
       <div className="container my-5">
         {categoryFilter().length > 0 ? (
           <div className="listItems">
