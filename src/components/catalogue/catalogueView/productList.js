@@ -3,15 +3,11 @@ import productData from "../../../data/productData";
 import { useState } from "react";
 import SearchBar from "../../searchBar/SearchBar.js";
 import { cats } from "../../../data/productData";
-import { useParams } from "react-router-dom";
 import "./productList.css";
 
 const ProductList = () => {
-  const { test } = useParams();
-  const [category, setCategory] = useState(test ? test : "Todos");
+  const [category, setCategory] = useState("Todos");
   const [search, setSearch] = useState(productData);
-
-  console.log(test);
 
   const categoryFilter = () => {
     if (category === "Todos") {
