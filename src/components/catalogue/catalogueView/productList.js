@@ -2,14 +2,19 @@ import ProductCard from "./productCard/ProductCard";
 import productData from "../../../data/productData";
 import { useState } from "react";
 import SearchBar from "../../searchBar/SearchBar.js";
+import { cats } from "../../../data/productData";
+import { useParams } from "react-router-dom";
 import "./productList.css";
 
 const ProductList = () => {
-  const [category, setCategory] = useState("");
+  const { test } = useParams();
+  const [category, setCategory] = useState(test ? test : "Todos");
   const [search, setSearch] = useState(productData);
 
+  console.log(test);
+
   const categoryFilter = () => {
-    if (category === "") {
+    if (category === "Todos") {
       return search;
     } else {
       let filtered = search.filter((el) => el.category === category);
@@ -20,54 +25,19 @@ const ProductList = () => {
   return (
     <div className="catalogue">
       <div className="listFilter ">
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("");
-          }}
-        >
-          Todos
-        </p>
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("buzos");
-          }}
-        >
-          Buzos
-        </p>
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("remeras");
-          }}
-        >
-          Remeras
-        </p>
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("jeans");
-          }}
-        >
-          Jeans
-        </p>
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("vestidos");
-          }}
-        >
-          Vestidos
-        </p>
-        <p
-          className="filter"
-          onClick={() => {
-            setCategory("otros");
-          }}
-        >
-          Otros
-        </p>
+        {cats.map((el) => {
+          return (
+            <p
+              key={el}
+              className="filter"
+              onClick={() => {
+                setCategory(el);
+              }}
+            >
+              {el}
+            </p>
+          );
+        })}
       </div>
       <SearchBar search={search} setSearch={setSearch} />
       <div className="catalogueList container my-5">

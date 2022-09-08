@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
-import productData, { mainSlider } from "../../data/productData";
+import productData, { mainSlider, cats } from "../../data/productData";
 import "./home.css";
 
 const Home = () => {
-  const cats = ["buzos", "remeras", "jeans", "otros"];
-
   return (
     <div className="homeBody">
       <div className="homeSlider">
@@ -21,12 +19,15 @@ const Home = () => {
       </div>
       <Container className="homeCategories">
         <Row xs={2} lg={3}>
-          {cats.map((el) => {
+          {cats.slice(1).map((el) => {
             const catImg = productData.find((prod) => el === prod.category);
+            if (catImg === undefined) {
+              return null;
+            }
             return (
               <Col className="homeCat" key={catImg.category}>
                 <Link to="/catalogo">
-                  <div style={{ backgroundImage: `url(${catImg.picture.desktop})` }}>
+                  <div style={{ backgroundImage: `url(${catImg.picture[0]})` }}>
                     <div className="mask">
                       <p>{catImg.category}</p>
                     </div>

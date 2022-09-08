@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
-
+import WhatsappMenu from "../../mini-components/WhatsappMenu";
 import "./navigation.css";
 
 const Navigation = () => {
@@ -16,12 +16,10 @@ const Navigation = () => {
         <NavLink to="/catalogo" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
           Catálogo
         </NavLink>
-        <NavLink to="/catalogo" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
-          Whatsapp
-        </NavLink>
-        <NavLink to="/catalogo" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
+        <WhatsappMenu clsname={"navlink"} txt={"Whatsapp"} />
+        <a href="https://www.instagram.com/" className="navlink" target="_blank" rel="noreferrer">
           Instagram
-        </NavLink>
+        </a>
       </Navbar>
     </div>
   );

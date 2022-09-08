@@ -21,19 +21,19 @@
 .listItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 25px;
 }
-
-.catalogueList > h1 {
-  height: 500px;
-  padding-top: 100px;
+.catalogueList {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
 }
 
 @media (min-width: 451px) and (max-width: 1299px) {
   .listItems {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 25px;
   }
 }
 
@@ -41,6 +41,6 @@
   .listItems {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 25px;
   }
 }

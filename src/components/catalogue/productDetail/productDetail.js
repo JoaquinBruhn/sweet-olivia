@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../../data/productData";
-import Whatsapp from "../../../mini-components/Whatsapp.js";
+import WhatsappButton from "../../../mini-components/WhatsappButton";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import "./productDetail.css";
 
@@ -18,7 +18,7 @@ const ProductDetail = () => {
       <Row className="d-flex my-5" xs={1} lg={2}>
         <Col>
           <Carousel>
-            {[product.picture.desktop, product.picture.tablet, product.picture.mobile].map((el) => {
+            {product.picture.map((el) => {
               return (
                 <Carousel.Item key={el}>
                   <img className="d-block w-100" src={el} alt={el} />
@@ -67,7 +67,7 @@ const ProductDetail = () => {
             </div>
           </div>
           <p className="text-left ">{product.description}</p>
-          <Whatsapp title={product.title} size={size} color={color} />
+          <WhatsappButton title={product.title} size={size} color={color} />
         </Col>
       </Row>
     </Container>

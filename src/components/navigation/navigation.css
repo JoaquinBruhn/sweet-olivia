@@ -28,10 +28,8 @@
   height: 80px;
 }
 
-.mainNav > div > div > a {
-  color: white;
-  text-decoration: none;
-  text-align: center;
+.mainNav > p {
+  margin: 0;
 }
 
 .navlink {
