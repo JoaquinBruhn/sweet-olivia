@@ -174,18 +174,11 @@ const productData = [
 export const mainSlider = [
   {
     title: "Slider 1",
-    image:
-      "https://media.istockphoto.com/id/1317905567/es/foto/maqueta-de-sudadera-con-capucha-de-lana-con-cremallera-en-la-vista-frontal.webp?s=612x612&w=is&k=20&c=64jaS3PGBLvBGwHAHW5qLxHky8YY8CTxUpMQ4BPkzfw=",
+    image: "https://i.ibb.co/tqxTD0D/Frame-20.jpg",
   },
   {
     title: "Slider 2",
-    image:
-      "https://media.istockphoto.com/id/1366255386/es/vector/zapatillas-medias.webp?s=612x612&w=is&k=20&c=qz_XsdKjbAxVmpl9ogP-No23DpEJOGI7pZRXx76ZZ8Y=",
-  },
-  {
-    title: "Slider 3",
-    image:
-      "https://media.istockphoto.com/id/1317905567/es/foto/maqueta-de-sudadera-con-capucha-de-lana-con-cremallera-en-la-vista-frontal.webp?s=612x612&w=is&k=20&c=64jaS3PGBLvBGwHAHW5qLxHky8YY8CTxUpMQ4BPkzfw=",
+    image: "https://i.ibb.co/hmNjhBg/Frame-19.jpg",
   },
 ];
 

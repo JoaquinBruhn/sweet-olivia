@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import productData, { mainSlider } from "../../data/productData";
 import "./home.css";
@@ -12,7 +13,7 @@ const Home = () => {
           {mainSlider.map((el) => {
             return (
               <Carousel.Item key={el.title}>
-                <img className="d-block w-100" src={el.image} alt={el.title} />
+                <img className="homeSliderSlide w-100" src={el.image} alt={el.title} />
               </Carousel.Item>
             );
           })}
@@ -23,12 +24,14 @@ const Home = () => {
           {cats.map((el) => {
             const catImg = productData.find((prod) => el === prod.category);
             return (
-              <Col className="homeCat" key={catImg.title}>
-                <div style={{ backgroundImage: `url(${catImg.picture.desktop})` }}>
-                  <div className="mask">
-                    <p>{catImg.title}</p>
+              <Col className="homeCat" key={catImg.category}>
+                <Link to="/catalogo">
+                  <div style={{ backgroundImage: `url(${catImg.picture.desktop})` }}>
+                    <div className="mask">
+                      <p>{catImg.category}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Col>
             );
           })}

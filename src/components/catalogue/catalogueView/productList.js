@@ -1,17 +1,16 @@
 import ProductCard from "./productCard/ProductCard";
-import "./productList.css";
 import productData from "../../../data/productData";
 import { useState } from "react";
-import SearchBar from "../../searchBar/SearchBar.js"
-
+import SearchBar from "../../searchBar/SearchBar.js";
+import "./productList.css";
 
 const ProductList = () => {
   const [category, setCategory] = useState("");
   const [search, setSearch] = useState(productData);
-  
+
   const categoryFilter = () => {
-    if(category === "") {
-      return search
+    if (category === "") {
+      return search;
     } else {
       let filtered = search.filter((el) => el.category === category);
       return filtered;
@@ -20,7 +19,7 @@ const ProductList = () => {
 
   return (
     <div className="catalogue">
-      <div className="listFilter d-flex">
+      <div className="listFilter ">
         <p
           className="filter"
           onClick={() => {
@@ -70,8 +69,8 @@ const ProductList = () => {
           Otros
         </p>
       </div>
-      <SearchBar search={search} setSearch={setSearch}/>
-      <div className="container my-5">
+      <SearchBar search={search} setSearch={setSearch} />
+      <div className="catalogueList container my-5">
         {categoryFilter().length > 0 ? (
           <div className="listItems">
             {categoryFilter().map((el) => {

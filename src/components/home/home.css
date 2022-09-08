@@ -6,22 +6,15 @@
   margin-bottom: 2.5rem;
 }
 
-.carousel-item > img {
-  height: 40rem;
-  background-size: center;
-  background-position: center;
-}
-
 .homeCat {
   margin-bottom: 55px;
 }
 
-.homeCat > div {
+.homeCat > a > div {
   background-size: cover;
   background-position: center;
-
-  height: 23.7rem;
-  width: 23.7rem;
+  height: 320px;
+  width: 320px;
 }
 .mask {
   position: relative;
@@ -74,6 +67,12 @@
     width: 200px;
     border: 1px solid black;
   }
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 240px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -84,5 +83,11 @@
     height: 144px;
     width: 144px;
     border: 1px solid black;
+  }
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
   }
 }

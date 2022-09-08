@@ -1,5 +1,6 @@
 .cardBody {
   text-align: left;
+  width: 300px;
 }
 
 .cardLink {
@@ -12,7 +13,7 @@
 }
 
 .cardImg {
-  width: 300px;
+  width: 100%;
   height: 400px;
   background-size: cover;
   background-position: center;

@@ -3,14 +3,18 @@
 }
 
 .listFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
   background-color: rgba(0, 0, 0, 0.83);
   color: white;
 }
 
 .filter {
-  width: 20%;
   margin: 0;
   padding: 10px 0;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -18,4 +22,25 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+}
+
+.catalogueList > h1 {
+  height: 500px;
+  padding-top: 100px;
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  .listItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .listItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
 }
