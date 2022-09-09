@@ -1,12 +1,8 @@
-import React, {useState} from 'react'
 import productData from "../../data/productData"
 
-function SearchBar({search,setSearch}) {
-  const [showResult, setShowResult] = useState("")
-
+function SearchBar({setSearch}) {
   const filterBySearch = (event) => {
     const query = event.target.value;
-    setShowResult(query)
     let updatedList = [...productData];
     if(query === "") {
       setSearch(productData)
