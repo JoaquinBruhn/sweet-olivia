@@ -1,26 +1,49 @@
+@font-face {
+  font-family: "holidayfreeregular";
+  src: url("../../font/holidayfree-webfont.woff") format("woff2"),
+    url("../../font/holidayfree-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   color: white;
   background-color: black;
 }
 
-.mainNav {
-  padding: 0 !important;
+.siteTitle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90px;
+}
+.siteTitle > h1 {
+  margin: 0;
+  font-size: 50px;
+  font-family: "holidayfreeregular";
 }
 
-.mainNav > div > div > a {
-  color: white;
-  text-decoration: none;
+.mainNav {
+  padding: 0 !important;
+  height: 80px;
+}
+
+.mainNav > p {
+  margin: 0;
 }
 
 .navlink {
   border-bottom: 4px solid black;
-  display: block;
-  padding: 18px 0;
-  transition: .3s ease-in-out;
-  text-decoration: none;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0;
+  height: 100%;
   width: 25%;
+  font-size: 22px;
+  text-decoration: none;
   color: rgb(197, 197, 197);
+  transition: 0.3s ease-in-out;
 }
 
 .navlink:hover {
@@ -29,6 +52,17 @@
 
 .selected-navlink {
   border-color: rgb(193, 193, 193);
-  display: block;
   color: white;
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  .navlink {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navlink {
+    font-size: 18px;
+  }
 }

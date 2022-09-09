@@ -6,19 +6,34 @@
   margin-bottom: 2.5rem;
 }
 
-.carousel-item > img {
-  height: 40rem;
-  background-size: center;
-  background-position: center;
-}
-
 .homeCat {
-  margin-bottom: 1rem;
+  margin-bottom: 55px;
 }
 
-.homeCat > img {
-  height: 150px;
-  width: 150px;
+.homeCat > a > div {
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  width: 320px;
+}
+.mask {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.mask > p {
+  position: absolute;
+  bottom: 27px;
+  left: 27px;
+  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+
+  color: white;
 }
 
 .howToSite > div {
@@ -41,4 +56,38 @@
 
 .howToSite > div > div > h2 {
   margin: 0;
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  .homeCat {
+    margin-bottom: 36px;
+  }
+  .homeCat > img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+  }
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 450px) {
+  .homeCat {
+    margin-bottom: 24px;
+  }
+  .homeCat > img {
+    height: 144px;
+    width: 144px;
+    border: 1px solid black;
+  }
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
+  }
 }
