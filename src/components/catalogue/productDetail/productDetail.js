@@ -8,8 +8,8 @@ import "./productDetail.css";
 const ProductDetail = () => {
   const { itemTitle } = useParams();
   const product = getProduct(itemTitle);
+  let i = 0;
 
-  //useState(getProduct.size[0])
   const [size, setSize] = useState(product.size[0]);
   const [color, setColor] = useState(product.color[0].colorName);
 
@@ -19,8 +19,10 @@ const ProductDetail = () => {
         <Col>
           <Carousel>
             {product.picture.map((el) => {
+              i++;
+              let elementKey = "picture" + i;
               return (
-                <Carousel.Item key={el}>
+                <Carousel.Item key={elementKey}>
                   <img className="d-block w-100" src={el} alt={el} />
                 </Carousel.Item>
               );

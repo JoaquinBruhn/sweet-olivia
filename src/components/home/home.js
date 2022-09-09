@@ -44,31 +44,19 @@ const Home = () => {
             <div>
               <h2>1</h2>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi magnam nostrum, perferendis quam
-              hic cumque amet reiciendis voluptatibus accusamus id officia, porro laudantium optio! Obcaecati vitae
-              dolores deleniti nobis.
-            </p>
+            <p>Elegí los productos que te interesen a través de nuestor catálogo.</p>
           </Col>
           <Col>
             <div>
               <h2>2</h2>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi magnam nostrum, perferendis quam
-              hic cumque amet reiciendis voluptatibus accusamus id officia, porro laudantium optio! Obcaecati vitae
-              dolores deleniti nobis.
-            </p>
+            <p>Una vez elegido el producto y el talle clickeá el botón “Comprar” que te redirecciona al WhatsApp.</p>
           </Col>
           <Col>
             <div>
               <h2>3</h2>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi magnam nostrum, perferendis quam
-              hic cumque amet reiciendis voluptatibus accusamus id officia, porro laudantium optio! Obcaecati vitae
-              dolores deleniti nobis.
-            </p>
+            <p>Coordiná directamente con la vendedora la forma de pago y envío.</p>
           </Col>
         </Row>
         <Row className="howToBuy" id="howToBuy">
