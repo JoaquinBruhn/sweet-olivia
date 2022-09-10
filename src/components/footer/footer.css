@@ -5,6 +5,38 @@
   color: white;
   background-color: black;
 }
-.footerLinks > * {
+
+.footerLinks {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLinks > div > * {
+  display: flex;
   text-align: start;
+  text-decoration: none;
+  color: #fff;
+  margin:3px;
+
+}
+
+.footerLinks > :nth-child(2) > * {
+  margin:10px;
+  width: 36px;
+  height: 36px;
+}
+
+.footerLinks > div > *:hover {
+  color:#fff;
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  
+}
+
+@media (max-width: 450px) {
+  .footerLinks {
+    padding: 25px 40px;
+  }
 }
