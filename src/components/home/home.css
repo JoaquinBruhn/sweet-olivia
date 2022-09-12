@@ -36,10 +36,15 @@
   color: white;
 }
 
+.homeHowTo > h2{
+  font-size: 48px;
+}
+
 .howToSite > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 50px 0;
 }
 
 .howToSite > div > div {
@@ -52,11 +57,62 @@
   background-color: black;
   border-radius: 50px;
   border: 1px solid black;
+  margin:30px 0;
 }
 
 .howToSite > div > div > h2 {
   margin: 0;
 }
+
+.howToSite > div > p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.logosSVG {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.svgText{
+  text-align: start;
+  margin-left: 25px;
+  font-size: 22px;
+}
+
+.svgText > * {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+.svgText > h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.svgText > p {
+  color: rgb(144, 142, 142)
+}
+
+.homeInstructions > h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  margin: 70px;
+  font-size: 22px;
+}
+
 
 @media (min-width: 451px) and (max-width: 1299px) {
   .homeCat {
@@ -89,5 +145,42 @@
     background-position: center;
     height: 180px;
     width: 180px;
+  }
+
+  .homeHowTo > * {
+    margin-bottom: 40px;
+  }
+
+  .homeHowTo > h2{
+    font-size: 36px;
+  }
+
+  .howToSite {
+    flex-direction: column;
+  }
+
+  .howToSite > div {
+    margin: 0 0 10px 0;
+  }
+
+  .howToSite > div > div {
+    margin: 20px 0;
+  }
+
+  .howToBuy {
+    flex-direction: column;
+  }
+
+  .logosSVG {
+    margin-top: 70px;
+  }
+
+  .homeInstructions > h2 {
+    font-size: 32px;
+  }
+
+  .aboutText {
+    margin: 50px;
+    font-size: 16px;
   }
 }
