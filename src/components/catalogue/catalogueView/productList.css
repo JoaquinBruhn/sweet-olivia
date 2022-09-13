@@ -18,6 +18,14 @@
   cursor: pointer;
 }
 
+.catsDropdown > button {
+  margin: 20px;
+}
+
+.catsDropdown > div {
+  transition: 0.5s ease-in-out;
+}
+
 .listItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

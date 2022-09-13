@@ -28,3 +28,13 @@
 .cardPrice {
   font-weight: bold;
 }
+
+@media (max-width: 450px) {
+  .cardBody {
+    text-align: left;
+    width: 150px;
+  }
+  .cardImg {
+    height: 200px;
+  }
+}
