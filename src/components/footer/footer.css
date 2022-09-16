@@ -10,6 +10,7 @@
   padding: 50px 80px;
   display: flex;
   justify-content: space-between;
+  font-size: 24px;
 }
 
 .footerLinks > div > * {
@@ -38,5 +39,6 @@
 @media (max-width: 450px) {
   .footerLinks {
     padding: 25px 40px;
+    font-size: 16px;
   }
 }

@@ -38,7 +38,7 @@ const ProductList = () => {
             return (
               <p
                 key={el}
-                className="filter"
+                className={category === el ? "filter selectedCat" : "filter"}
                 onClick={() => {
                   setCategory(el);
                 }}
@@ -50,15 +50,15 @@ const ProductList = () => {
         </div>
       ) : (
         <Dropdown className="catsDropdown">
-          <Dropdown.Toggle variant="dark" id="dropdown-basic">
+          <Dropdown.Toggle variant="dark" id="dropdown-basic" >
             Categorias
           </Dropdown.Toggle>
-          <Dropdown.Menu>
+          <Dropdown.Menu variant="dark">
             {cats.map((el) => {
               return (
                 <Dropdown.Item
                   key={el}
-                  className="filter"
+                  className="dropdownFilter"
                   onClick={() => {
                     setCategory(el);
                   }}
@@ -88,19 +88,3 @@ const ProductList = () => {
 
 export default ProductList;
 
-// <div className="catalogue">
-//   <div className="listFilter ">
-//     {cats.map((el) => {
-//       return (
-//         <p
-//           key={el}
-//           className="filter"
-//           onClick={() => {
-//             setCategory(el);
-//           }}
-//         >
-//           {el}
-//         </p>
-//       );
-//     })}
-//   </div>

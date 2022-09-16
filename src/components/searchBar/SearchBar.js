@@ -1,4 +1,5 @@
 import productData from "../../data/productData"
+import "./bar.css"
 
 function SearchBar({setSearch}) {
   const filterBySearch = (event) => {
@@ -16,8 +17,8 @@ function SearchBar({setSearch}) {
   return (
     <>
     <div className='searchHeader'>
-      <div className='searchText'>Search:</div>
-      <input id= "searchBox" onChange={filterBySearch}/>
+      <div className='searchText'>Buscar Productos</div>
+      <input className="searchBox" id= "searchBox" onChange={filterBySearch}/>
       </div>
       </>
   )

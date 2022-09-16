@@ -1,20 +1,19 @@
-.searchHeader {
-  display: flex;
+.searchBox {
+  border: 1px solid #000;
+    border-radius: 5px;
+    width: 30%;
+    outline: 10px;
+    padding: 5px;
+    background-color: #fff;
 }
-.searchText {
-  margin-right: 10px;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#searchBox {
-  height: 25px;
-}
-#searchBox[placeholder] {
-  line-height: 25px;
-  font-size: 25px;
-}
-#itemList {
-  min-height: 260px;
+
+@media (max-width:450px) {
+  .searchBox {
+    border: 1px solid #000;
+      border-radius: 5px;
+      width: 75%;
+      outline: 0;
+      padding: 5px;
+      background-color: #fff;
+  }
 }
