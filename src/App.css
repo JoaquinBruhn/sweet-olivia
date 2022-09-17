@@ -1,7 +1,7 @@
 :root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
-  --tertiary-color: rgb(182, 174, 121);
+  --tertiary-color: #EEE1BF;
 }
 * {
   font-family: "Rubik", sans-serif;

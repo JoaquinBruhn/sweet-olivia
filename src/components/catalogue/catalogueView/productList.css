@@ -27,7 +27,7 @@
 .dropdownFilter  {
   margin: 0;
   width: 335px;
-  font-size: 19px;
+  font-size: 26px;
   text-align: center;
   justify-content: center;
 }
@@ -37,6 +37,7 @@
   margin: 10px;
   border-radius: 0.350rem;
   width: 335px;
+  font-size: 26px;
 }
 
 .catsDropdown > div {

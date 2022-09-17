@@ -1,3 +1,7 @@
+.searchText {
+  font-size: 25px;
+}
+
 .searchBox {
   border: 1px solid #000;
     border-radius: 5px;
@@ -16,4 +20,9 @@
       padding: 5px;
       background-color: #fff;
   }
+
+  .searchText {
+    font-size: 20px;
+  }
+  
 }
