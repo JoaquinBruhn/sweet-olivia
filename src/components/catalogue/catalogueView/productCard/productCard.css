@@ -13,6 +13,7 @@
 }
 
 .cardImg {
+  position: relative;
   width: 100%;
   height: 400px;
   background-size: cover;
@@ -20,11 +21,100 @@
   transition: 0.5s ease-in-out;
 }
 
+.cardDiscount {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--tertiary-color);
+}
+
+.cardDiscount > p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+}
+
 .cardName {
   text-transform: uppercase;
-  margin: 0;
+  font-size: 18px;
+  margin: 8px 0 0 10px;
 }
 
 .cardPrice {
   font-weight: bold;
+  margin-left: 10px;
+}
+
+@media (min-width: 780px) and (max-width: 1299px) {
+  .cardBody {
+    width: 210px;
+  }
+
+  .cardImg {
+    height: 280px;
+  }
+
+  .cardDiscount {
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardDiscount > p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 779px) {
+  .cardBody {
+    width: 210px;
+  }
+
+  .cardImg {
+    height: 280px;
+  }
+
+  .cardDiscount {
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardDiscount > p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 450px) {
+  .cardBody {
+    text-align: left;
+    width: 150px;
+  }
+  .cardImg {
+    height: 200px;
+  }
+
+  .cardDiscount {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardDiscount > p {
+    font-size: 16px;
+    font-weight: 700;
+  }
 }

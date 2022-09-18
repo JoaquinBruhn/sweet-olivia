@@ -3,19 +3,33 @@
 }
 
 .homeBody > div {
-  margin-bottom: 2.5rem;
+  margin-bottom: 150px;
+}
+
+.homeCategories {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-gap: 40px;
+  justify-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homeCat {
-  margin-bottom: 55px;
+  margin: 0;
 }
 
 .homeCat > a > div {
   background-size: cover;
   background-position: center;
-  height: 320px;
-  width: 320px;
+  height: 380px;
+  width: 380px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .mask {
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.9) 100%);
@@ -32,14 +46,19 @@
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0em;
-
   color: white;
+}
+
+.homeHowTo > h2 {
+  margin-bottom: 70px;
+  font-size: 48px;
 }
 
 .howToSite > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 50px 0;
 }
 
 .howToSite > div > div {
@@ -52,21 +71,67 @@
   background-color: black;
   border-radius: 50px;
   border: 1px solid black;
+  margin: 30px 0;
 }
 
 .howToSite > div > div > h2 {
   margin: 0;
 }
 
-@media (min-width: 451px) and (max-width: 1299px) {
-  .homeCat {
-    margin-bottom: 36px;
+.howToSite > div > p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.logosSVG {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.svgText {
+  text-align: start;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.svgText > * {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.svgText > h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.svgText > p {
+  color: rgb(144, 142, 142);
+}
+
+.homeInstructions > h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  margin: 70px;
+  font-size: 22px;
+}
+
+@media (min-width: 780px) and (max-width: 1299px) {
+  .homeCategories {
+    grid-template-columns: repeat(3, 240px);
+    grid-gap: 30px;
   }
-  .homeCat > img {
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-  }
+
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
@@ -75,19 +140,84 @@
   }
 }
 
-@media (max-width: 450px) {
-  .homeCat {
-    margin-bottom: 24px;
+@media (min-width: 451px) and (max-width: 779px) {
+  .homeCategories {
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 30px;
   }
-  .homeCat > img {
-    height: 144px;
-    width: 144px;
-    border: 1px solid black;
-  }
+
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .mask > p {
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .homeBody > div {
+    margin-bottom: 100px;
+  }
+
+  .homeCategories {
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 20px;
+  }
+
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+    width: 160px;
+  }
+
+  .mask > p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 20px;
+  }
+
+  .homeHowTo > * {
+    margin-bottom: 40px;
+  }
+
+  .homeHowTo > h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .howToSite {
+    flex-direction: column;
+  }
+
+  .howToSite > div {
+    margin: 0 0 10px 0;
+  }
+
+  .howToSite > div > div {
+    margin: 20px 0;
+  }
+
+  .howToBuy {
+    flex-direction: column;
+  }
+
+  .logosSVG {
+    margin-top: 70px;
+  }
+
+  .homeInstructions > h2 {
+    font-size: 32px;
+  }
+
+  .aboutText {
+    margin: 50px;
+    font-size: 16px;
   }
 }

@@ -9,6 +9,7 @@ const pantalones = [
       { colorName: "Celeste", colorValue: "#05F2EB" },
     ],
     price: 22,
+    discount: false,
     picture: [
       "https://media.istockphoto.com/id/938486228/es/foto/jeans-casuales-pantalones-aislado-sobre-fondo-blanco.webp?s=612x612&w=is&k=20&c=RzFcu9UiXRHvTZVy3tq_Q-yLeAdu_bNDdBNJ-4dSuiE=",
       "https://media.istockphoto.com/id/938486228/es/foto/jeans-casuales-pantalones-aislado-sobre-fondo-blanco.webp?s=612x612&w=is&k=20&c=RzFcu9UiXRHvTZVy3tq_Q-yLeAdu_bNDdBNJ-4dSuiE=",

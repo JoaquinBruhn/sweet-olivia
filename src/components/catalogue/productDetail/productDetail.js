@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import { getProduct } from "../../../data/productData";
 import WhatsappButton from "../../../mini-components/WhatsappButton";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
@@ -31,10 +31,12 @@ const ProductDetail = () => {
         </Col>
 
         <Col className="productInfo d-flex flex-column ">
-          <h2 className="text-left ">{product.title}</h2>
-          <h2 className="text-left ">${product.price}</h2>
-          <div>
-            <p className="align-left ">TALLE</p>
+          <div className="detailTitleContainer">
+            <h2 className="productTitle">{product.title}</h2>
+            <h2 className="productPrice">${product.price}</h2>
+          </div>
+          <div className="detailSizeContainer">
+            <p className="productSizeTitle">TALLE</p>
             <div className="d-flex">
               {product.size.map((el) => {
                 return (
@@ -51,8 +53,8 @@ const ProductDetail = () => {
               })}
             </div>
           </div>
-          <div>
-            <p className="align-left ">COLORES</p>
+          <div className="detailColorContainer">
+            <p className="productColorTitle">COLORES</p>
             <div className="d-flex">
               {product.color.map((el) => {
                 return (
@@ -68,8 +70,12 @@ const ProductDetail = () => {
               })}
             </div>
           </div>
-          <p className="text-left ">{product.description}</p>
           <WhatsappButton title={product.title} size={size} color={color} />
+          {product.description ? (
+            <div className="detailDescriptionContainer">
+              <p className="productDescription">{product.description}</p>
+            </div>
+          ) : null}
         </Col>
       </Row>
     </Container>

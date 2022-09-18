@@ -1,12 +1,17 @@
 :root {
-  --primary-color: #000000;
+  --primary-color: #111;
   --secondary-color: #ffffff;
-  --tertiary-color: rgb(182, 174, 121);
+  --tertiary-color: #eee1bf;
 }
 * {
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
 }
+
+* > a {
+  color: inherit;
+}
+
 .App {
   text-align: center;
 }
