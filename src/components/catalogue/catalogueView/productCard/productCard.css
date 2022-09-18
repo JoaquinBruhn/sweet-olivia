@@ -77,23 +77,22 @@
 
 @media (min-width: 451px) and (max-width: 779px) {
   .cardBody {
-    width: 210px;
+    width: 225px;
   }
 
   .cardImg {
-    height: 280px;
+    height: 300px;
   }
 
   .cardDiscount {
-    top: 15px;
-    left: 15px;
-    width: 40px;
-    height: 40px;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
   }
 
   .cardDiscount > p {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 20px;
   }
 }
 

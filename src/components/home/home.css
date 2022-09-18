@@ -142,15 +142,15 @@
 
 @media (min-width: 451px) and (max-width: 779px) {
   .homeCategories {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(2, 240px);
     grid-gap: 30px;
   }
 
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
   }
 
   .mask > p {
