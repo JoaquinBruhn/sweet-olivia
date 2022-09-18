@@ -14,9 +14,21 @@ const ProductCard = ({ product }) => {
             style={{ backgroundImage: `url(${bgprod})` }}
             onMouseEnter={() => setbgprod(product.picture[1])}
             onMouseLeave={() => setbgprod(product.picture[0])}
-          ></div>
+          >
+            {product.discount ? (
+              <div className="cardDiscount">
+                <p>{product.discount}</p>
+              </div>
+            ) : null}
+          </div>
         ) : (
-          <div className="cardImg" style={{ backgroundImage: `url(${bgprod})` }}></div>
+          <div className="cardImg" style={{ backgroundImage: `url(${bgprod})` }}>
+            {product.discount ? (
+              <div className="cardDiscount">
+                <p>{product.discount}</p>
+              </div>
+            ) : null}
+          </div>
         )}
         <p className="cardName">{product.title}</p>
         <p className="cardPrice">${product.price}</p>

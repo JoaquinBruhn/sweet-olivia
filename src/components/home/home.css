@@ -6,6 +6,17 @@
   margin-bottom: 150px;
 }
 
+.homeCategories {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-gap: 40px;
+  justify-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .homeCat {
   margin: 0;
 }
@@ -17,7 +28,6 @@
   width: 380px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
 }
 
 .mask {
@@ -36,11 +46,10 @@
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0em;
-
   color: white;
 }
 
-.homeHowTo > h2{
+.homeHowTo > h2 {
   margin-bottom: 70px;
   font-size: 48px;
 }
@@ -62,7 +71,7 @@
   background-color: black;
   border-radius: 50px;
   border: 1px solid black;
-  margin:30px 0;
+  margin: 30px 0;
 }
 
 .howToSite > div > div > h2 {
@@ -81,7 +90,7 @@
   margin-bottom: 50px;
 }
 
-.svgText{
+.svgText {
   text-align: start;
   font-size: 22px;
   margin-left: 20px;
@@ -93,14 +102,13 @@
   font-size: 16px;
 }
 
-
 .svgText > h5 {
   font-size: 22px;
   font-weight: 700;
 }
 
 .svgText > p {
-  color: rgb(144, 142, 142)
+  color: rgb(144, 142, 142);
 }
 
 .homeInstructions > h2 {
@@ -118,58 +126,70 @@
   font-size: 22px;
 }
 
+@media (min-width: 780px) and (max-width: 1299px) {
+  .homeCategories {
+    grid-template-columns: repeat(3, 240px);
+    grid-gap: 30px;
+  }
 
-@media (min-width: 451px) and (max-width: 1299px) {
-  .homeCat {
-    margin-bottom: 36px;
-  }
-  .homeCat > img {
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-  }
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
     height: 240px;
     width: 240px;
-    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 779px) {
+  .homeCategories {
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 30px;
+  }
+
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  .mask > p {
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 450px) {
-
-  .homeCategories {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .homeBody > div {
     margin-bottom: 100px;
   }
 
-  .homeCat {
-    margin-bottom: 10px;
+  .homeCategories {
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 20px;
   }
-  .homeCat > img {
-    height: 144px;
-    width: 144px;
-    border: 1px solid black;
-  }
+
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
-    height: 180px;
-    width: 180px;
-    margin-bottom: 20px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .mask > p {
+    bottom: 15px;
+    left: 15px;
+    font-size: 20px;
   }
 
   .homeHowTo > * {
     margin-bottom: 40px;
   }
 
-  .homeHowTo > h2{
+  .homeHowTo > h2 {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 
   .howToSite {

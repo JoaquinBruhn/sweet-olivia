@@ -1,6 +1,11 @@
-/* .detailTitleContainer {
+.productInfo {
+  padding: 0 5%;
+}
 
-} */
+.productInfo > * {
+  text-align: start;
+  margin: 0 0 50px 116px;
+}
 
 .productTitle {
   font-size: 46px;
@@ -29,7 +34,7 @@
   width: 50px;
   margin: 0 10px 0 0;
   border-radius: 50px;
-  border: 1px solid black;
+  border: 1px solid var(--primary-color);
   background-color: var(--tertiary-color);
 }
 
@@ -39,9 +44,8 @@
 }
 
 .selectedCircle {
-  border: 3px solid black;
+  border: 3px solid var(--primary-color);
 }
-
 
 .detailColorContainer {
   text-align: start;
@@ -59,29 +63,24 @@
   font-size: 20px;
 }
 
-
-.productInfo {
-  padding: 0 5%;
-}
-
-.productInfo > * {
-  text-align: start;
-  margin: 0 0 50px 116px; 
-}
-
 .btnWsp {
   border: none;
   text-align: center;
   font-size: 28px;
-  width:50%;
+  width: 50%;
   height: 70px;
   background-color: var(--tertiary-color);
 }
 
-
-@media (max-width:450px) {
+@media (min-width: 780px) and (max-width: 1299px) {
   .productInfo > * {
-    margin: 20px ;
+    margin: 0 0 30px 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .productInfo > * {
+    margin: 20px;
   }
 
   .detailDescriptionContainer > p {
