@@ -149,8 +149,8 @@
   .homeCat > a > div {
     background-size: cover;
     background-position: center;
-    height: 240px;
-    width: 240px;
+    height: 200px;
+    width: 200px;
   }
 
   .mask > p {
