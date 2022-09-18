@@ -17,8 +17,7 @@ function SearchBar({setSearch}) {
   return (
     <>
     <div className='searchHeader'>
-      <div className='searchText'>Buscar Productos</div>
-      <input className="searchBox" id= "searchBox" onChange={filterBySearch}/>
+      <input className="searchBox" id= "searchBox" onChange={filterBySearch} placeholder="Buscar..."/>
       </div>
       </>
   )

@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.83);
+  background-color: #111;
   color: white;
   height: 55px;
   font-size: 19px;
@@ -20,8 +20,7 @@
 }
 
 .selectedCat {
-  border-bottom: solid;
-  border-color: rgb(193, 193, 193);
+  font-weight: 700;
 }
 
 .dropdownFilter  {
@@ -38,12 +37,27 @@
   border-radius: 0.350rem;
   width: 335px;
   font-size: 26px;
+  background-color: #111;
+  color: #fff;
+}
+
+.catsDropdown > button:hover {
+  background-color: #111;
+}
+
+.catsDropdown > button:focus {
+  background-color: #111;
 }
 
 .catsDropdown > div {
   transition: 0.5s ease-in-out;
   width: 335px;
   text-align: center;
+}
+
+.catsDropdown * {
+  background-color: #111;
+  color: #fff;
 }
 
 .listItems {

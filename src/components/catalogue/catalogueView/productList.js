@@ -50,10 +50,10 @@ const ProductList = () => {
         </div>
       ) : (
         <Dropdown className="catsDropdown">
-          <Dropdown.Toggle variant="dark" id="dropdown-basic" >
+          <Dropdown.Toggle id="dropdown-basic" >
             Categorias
           </Dropdown.Toggle>
-          <Dropdown.Menu variant="dark">
+          <Dropdown.Menu >
             {cats.map((el) => {
               return (
                 <Dropdown.Item

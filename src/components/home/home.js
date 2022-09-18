@@ -70,8 +70,8 @@ const Home = () => {
                 </svg>
               </span>
               <div className="svgText">
-              <h5>ENVIOS</h5>
-              <p>A todo el país</p>
+              <h5>ENVIOS A TODO EL PAÍS</h5>
+              <p>Envios a traves de Correo Argentino</p>
               </div>
           
           </Col>

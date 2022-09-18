@@ -3,19 +3,23 @@
 }
 
 .homeBody > div {
-  margin-bottom: 2.5rem;
+  margin-bottom: 150px;
 }
 
 .homeCat {
-  margin-bottom: 55px;
+  margin: 0;
 }
 
 .homeCat > a > div {
   background-size: cover;
   background-position: center;
-  height: 320px;
-  width: 320px;
+  height: 380px;
+  width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 }
+
 .mask {
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.9) 100%);
@@ -37,6 +41,7 @@
 }
 
 .homeHowTo > h2{
+  margin-bottom: 70px;
   font-size: 48px;
 }
 
@@ -78,8 +83,8 @@
 
 .svgText{
   text-align: start;
-  margin-left: 25px;
   font-size: 22px;
+  margin-left: 20px;
 }
 
 .svgText > * {
@@ -128,12 +133,23 @@
     background-position: center;
     height: 240px;
     width: 240px;
+    margin-bottom: 24px;
   }
 }
 
 @media (max-width: 450px) {
+
+  .homeCategories {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .homeBody > div {
+    margin-bottom: 100px;
+  }
+
   .homeCat {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
   }
   .homeCat > img {
     height: 144px;
@@ -145,6 +161,7 @@
     background-position: center;
     height: 180px;
     width: 180px;
+    margin-bottom: 20px;
   }
 
   .homeHowTo > * {
