@@ -50,10 +50,8 @@ const ProductList = () => {
         </div>
       ) : (
         <Dropdown className="catsDropdown">
-          <Dropdown.Toggle id="dropdown-basic" >
-            Categorias
-          </Dropdown.Toggle>
-          <Dropdown.Menu >
+          <Dropdown.Toggle id="dropdown-basic">Categorias</Dropdown.Toggle>
+          <Dropdown.Menu>
             {cats.map((el) => {
               return (
                 <Dropdown.Item
@@ -87,4 +85,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-

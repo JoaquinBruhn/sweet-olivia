@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #000000;
+  --primary-color: #111;
   --secondary-color: #ffffff;
-  --tertiary-color: #EEE1BF;
+  --tertiary-color: #eee1bf;
 }
 * {
   font-family: "Rubik", sans-serif;
@@ -9,7 +9,7 @@
 }
 
 * > a {
-  color:inherit
+  color: inherit;
 }
 
 .App {
