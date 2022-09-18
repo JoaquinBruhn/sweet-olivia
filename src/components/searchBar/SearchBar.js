@@ -1,12 +1,9 @@
-import React, {useState} from 'react'
 import productData from "../../data/productData"
+import "./bar.css"
 
-function SearchBar({search,setSearch}) {
-  const [showResult, setShowResult] = useState("")
-
+function SearchBar({setSearch}) {
   const filterBySearch = (event) => {
     const query = event.target.value;
-    setShowResult(query)
     let updatedList = [...productData];
     if(query === "") {
       setSearch(productData)
@@ -20,8 +17,7 @@ function SearchBar({search,setSearch}) {
   return (
     <>
     <div className='searchHeader'>
-      <div className='searchText'>Search:</div>
-      <input id= "searchBox" onChange={filterBySearch}/>
+      <input className="searchBox" id= "searchBox" onChange={filterBySearch} placeholder="Buscar..."/>
       </div>
       </>
   )

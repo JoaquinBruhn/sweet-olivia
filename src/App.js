@@ -25,18 +25,15 @@ function App() {
             <Route exact path="/comoComprar" element={<HowTo />}></Route>
             <Route exact path="/catalogo" element={<ProductList />}></Route>
             <Route exact path="/itemDetail/:itemTitle" element={<ProductDetail />}></Route>
-
           </Routes>
         </main>
 
         <footer>
           <Footer />
         </footer>
-
       </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-

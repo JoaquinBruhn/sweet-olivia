@@ -3,19 +3,92 @@
 }
 
 .listFilter {
-  background-color: rgba(0, 0, 0, 0.83);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #111;
   color: white;
+  height: 55px;
+  font-size: 19px;
 }
 
 .filter {
-  width: 20%;
   margin: 0;
   padding: 10px 0;
-  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.selectedCat {
+  font-weight: 700;
+}
+
+.dropdownFilter  {
+  margin: 0;
+  width: 335px;
+  font-size: 26px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.catsDropdown > button {
+  margin: 10px;
+  border-radius: 0.350rem;
+  width: 335px;
+  font-size: 26px;
+  background-color: #111;
+  color: #fff;
+}
+
+.catsDropdown > button:hover {
+  background-color: #111;
+}
+
+.catsDropdown > button:focus {
+  background-color: #111;
+}
+
+.catsDropdown > div {
+  transition: 0.5s ease-in-out;
+  width: 335px;
+  text-align: center;
+}
+
+.catsDropdown * {
+  background-color: #111;
+  color: #fff;
 }
 
 .listItems {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 25px;
+}
+.catalogueList {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  .listItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .listItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width:320px) {
+  .catsDropdown > button {
+    width: 280px;
+  }
 }
