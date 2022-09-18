@@ -17,7 +17,7 @@ const Navigation = () => {
           Catálogo
         </NavLink>
         <WhatsappMenu clsname={"navlink"} txt={"Whatsapp"} />
-        <a href="https://www.instagram.com/" className="navlink" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/sweetolivia.ok" className="navlink" target="_blank" rel="noreferrer">
           Instagram
         </a>
       </Navbar>

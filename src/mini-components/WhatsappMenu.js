@@ -3,7 +3,7 @@ import UseWhatsapp from "whatsapp-react-component";
 import { number } from "../data/productData";
 
 const WhatsappMenu = ({ clsname, txt }) => {
-  const message = "Buenas Brenda tengo algunas preguntas de la pagina.";
+  const message = "Hola Brenda! Tengo una duda sobre la página.";
 
   const sendMessage = () => {
     UseWhatsapp(number, message);
