@@ -43,7 +43,7 @@ const Home = () => {
             <div>
               <h2>1</h2>
             </div>
-            <p>Elegí los productos que te interesen a través de nuestor catálogo.</p>
+            <p>Elegí los productos que te interesen a través de nuestro catálogo.</p>
           </Col>
           <Col>
             <div>

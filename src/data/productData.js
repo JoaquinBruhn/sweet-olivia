@@ -27,3 +27,20 @@ export const getProduct = (title) => {
 export const number = "+54 1178974932";
 
 export default productData;
+
+/*
+const productSkeleton = {
+  title: "",
+  category: "",
+  size: ["", ""],
+  color: [
+    { colorName: "", colorValue: "" },
+    { colorName: "", colorValue: "" },
+  ],
+  price: 11,
+  discount: false,
+  picture: ["", ""],
+  description: "",
+  stock: 11,
+};
+*/

@@ -55,6 +55,11 @@
   color: white;
 }
 
+.navWhatsaap {
+  border: none;
+  background-color: #000;
+}
+
 @media (min-width: 451px) and (max-width: 1299px) {
   .navlink {
     font-size: 18px;
