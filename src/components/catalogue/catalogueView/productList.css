@@ -14,6 +14,7 @@
 }
 
 .filter {
+  cursor: pointer;
   margin: 0;
   padding: 10px 0;
   transition: 0.5s ease-in-out;
@@ -26,15 +27,15 @@
 .dropdownFilter {
   margin: 0;
   width: 335px;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   justify-content: center;
 }
 
 .catsDropdown > button {
-  margin: 10px;
-  border-radius: 0.35rem;
-  width: 335px;
+  /* margin: 10px; */
+  border-radius: 0;
+  width: 100%;
   font-size: 26px;
   background-color: #111;
   color: #fff;
@@ -47,12 +48,12 @@
 
 .catsDropdown > div {
   transition: 0.5s ease-in-out;
-  width: 335px;
+  width: 100%;
+  background-color: var(--tertiary-color);
   text-align: center;
 }
 
 .catsDropdown * {
-  background-color: #111;
   color: #fff;
 }
 
@@ -81,6 +82,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
+  .catsDropdown > button {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -89,10 +93,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-}
-
-@media (max-width: 320px) {
   .catsDropdown > button {
-    width: 280px;
+    font-size: 22px;
   }
 }

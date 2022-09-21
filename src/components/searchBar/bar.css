@@ -1,7 +1,6 @@
-
 .searchBox {
   border-radius: 5px;
-  border: 1px solid rgb(0, 0, 0, 0.45);
+  border: 0px;
   width: 90%;
   outline: 10px;
   padding: 7px;
@@ -11,9 +10,8 @@
   box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.45);
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .searchBox {
     width: 75%;
   }
-  
 }

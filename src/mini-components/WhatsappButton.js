@@ -8,7 +8,7 @@ const WhatsappButton = ({ title, size, color }) => {
   return (
     <>
       <ReactWhatsapp className="btnWsp" number={number} message={message}>
-        Comprar
+        COMPRAR
       </ReactWhatsapp>
     </>
   );
