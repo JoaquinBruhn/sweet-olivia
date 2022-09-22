@@ -15,7 +15,7 @@ const ProductDetail = () => {
 
   return (
     <Container>
-      <Row className="d-flex my-5" xs={1} lg={2}>
+      <Row className="d-flex my-4" xs={1} lg={2}>
         <Col>
           <Carousel>
             {product.picture.map((el) => {
@@ -70,7 +70,9 @@ const ProductDetail = () => {
               })}
             </div>
           </div>
+          <div className="wspContainer">
           <WhatsappButton title={product.title} size={size} color={color} />
+          </div>
           {product.description ? (
             <div className="detailDescriptionContainer">
               <p className="productDescription">{product.description}</p>

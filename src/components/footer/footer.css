@@ -42,9 +42,6 @@
   color: #fff;
 }
 
-@media (min-width: 451px) and (max-width: 1299px) {
-}
-
 @media (max-width: 450px) {
   .footerLinks {
     padding: 25px 40px;

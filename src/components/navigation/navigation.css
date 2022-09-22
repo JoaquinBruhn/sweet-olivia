@@ -17,6 +17,7 @@
   justify-content: center;
   height: 90px;
 }
+
 .siteTitle > h1 {
   margin: 0;
   font-size: 50px;
@@ -55,26 +56,10 @@
   color: white;
 }
 
-.navWhatsaap {
+.navWhatsApp {
   border: none;
   background-color: #000;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 451px) and (max-width: 1299px) {
-  .navlink {
-    border-bottom: 3px solid black;
-  }
-  .selected-navlink {
-    border-color: rgb(193, 193, 193);
-    color: white;
-  }
-  .mainNav {
-    height: 65px;
-  }
-  .navlink {
-    font-size: 18px;
-  }
+  margin-bottom: 0;
 }
 
 @media (max-width: 450px) {
@@ -90,5 +75,21 @@
   }
   .navlink {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 1299px) {
+  .navlink {
+    border-bottom: 3px solid black;
+  }
+  .selected-navlink {
+    border-color: rgb(193, 193, 193);
+    color: white;
+  }
+  .mainNav {
+    height: 65px;
+  }
+  .navlink {
+    font-size: 18px;
   }
 }

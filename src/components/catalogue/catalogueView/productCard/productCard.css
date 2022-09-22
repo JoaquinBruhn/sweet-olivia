@@ -53,7 +53,57 @@
   margin-left: 10px;
 }
 
+@media (max-width: 450px) {
+
+  .cardBody {
+    text-align: left;
+    width: 150px;
+  }
+
+  .cardImg {
+    height: 200px;
+  }
+
+  .cardDiscount {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardDiscount > p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+}
+
+@media (min-width: 451px) and (max-width: 779px) {
+
+  .cardBody {
+    width: 225px;
+  }
+
+  .cardImg {
+    height: 300px;
+  }
+
+  .cardDiscount {
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardDiscount > p {
+    font-size: 20px;
+  }
+
+}
+
+
 @media (min-width: 780px) and (max-width: 1299px) {
+
   .cardBody {
     width: 210px;
   }
@@ -73,47 +123,5 @@
     font-size: 16px;
     font-weight: 700;
   }
-}
-
-@media (min-width: 451px) and (max-width: 779px) {
-  .cardBody {
-    width: 225px;
-  }
-
-  .cardImg {
-    height: 300px;
-  }
-
-  .cardDiscount {
-    top: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .cardDiscount > p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 450px) {
-  .cardBody {
-    text-align: left;
-    width: 150px;
-  }
-  .cardImg {
-    height: 200px;
-  }
-
-  .cardDiscount {
-    top: 10px;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .cardDiscount > p {
-    font-size: 16px;
-    font-weight: 700;
-  }
+  
 }
