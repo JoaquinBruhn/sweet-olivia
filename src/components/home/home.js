@@ -25,7 +25,7 @@ const Home = () => {
           }
           return (
             <Col className="homeCat" key={catImg.category}>
-              <Link to="/catalogo">
+              <Link to={`/catalogo/${catImg.category}`}>
                 <div style={{ backgroundImage: `url(${catImg.picture[0]})` }}>
                   <div className="mask">
                     <p>{catImg.category}</p>

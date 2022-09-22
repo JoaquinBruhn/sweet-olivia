@@ -1,13 +1,15 @@
 import ProductCard from "./productCard/ProductCard";
 import productData from "../../../data/productData";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import SearchBar from "../../searchBar/SearchBar.js";
 import { cats } from "../../../data/productData";
 import "./productList.css";
 
 const ProductList = () => {
-  const [category, setCategory] = useState("Todos");
+  const { homeFilter } = useParams();
+  const [category, setCategory] = useState(homeFilter || "Todos");
   const [search, setSearch] = useState(productData);
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 540;
