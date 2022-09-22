@@ -46,7 +46,7 @@
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0em;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .homeHowTo > h2 {
@@ -67,10 +67,10 @@
   align-items: center;
   height: 3rem;
   width: 3rem;
-  color: white;
-  background-color: black;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 50px;
-  border: 1px solid black;
+  border: 1px solid var(--primary-color);
   margin: 30px 0;
 }
 
@@ -127,7 +127,6 @@
 }
 
 @media (max-width: 450px) {
-  
   .homeBody > div {
     margin-bottom: 40px;
   }
@@ -198,11 +197,9 @@
     margin: 50px;
     font-size: 16px;
   }
-
 }
 
 @media (min-width: 451px) and (max-width: 779px) {
-
   .homeBody > div {
     margin-bottom: 60px;
   }
@@ -227,7 +224,6 @@
 }
 
 @media (min-width: 780px) and (max-width: 1299px) {
-
   .homeCategories {
     grid-template-columns: repeat(3, 240px);
     grid-gap: 30px;
@@ -239,5 +235,4 @@
     height: 240px;
     width: 240px;
   }
-
 }
