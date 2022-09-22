@@ -18,7 +18,7 @@ const Home = () => {
         </Carousel>
       </div>
       <div className="homeCategories">
-        {cats.slice(1).map((el) => {
+        {cats.slice(1, -1).map((el) => {
           const catImg = productData.find((prod) => el === prod.category);
           if (catImg === undefined) {
             return null;

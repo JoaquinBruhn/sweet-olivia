@@ -3,10 +3,13 @@ import otros from "./catalogue/productOtros";
 import remeras from "./catalogue/productRemeras";
 import vestidos from "./catalogue/productVestidos";
 import pantalones from "./catalogue/productPantalones";
+import remerones from "./catalogue/productRemerones";
+import bikinis from "./catalogue/productBikinis"
+import tops from "./catalogue/productTops"
 
-const productData = [...buzos, ...remeras, ...vestidos, ...pantalones, ...otros];
+const productData = [...buzos, ...remeras,...remerones, ...vestidos, ...pantalones, ...bikinis, ...tops, ...otros];
 
-export const cats = ["Todos", "Buzos", "Remeras", "Pantalones", "Vestidos", "Otros"];
+export const cats = ["Todos", "Buzos", "Remeras","Remerones", "Jeans", "Bikinis", "Tops", "Otros"];
 
 export const mainSlider = [
   {

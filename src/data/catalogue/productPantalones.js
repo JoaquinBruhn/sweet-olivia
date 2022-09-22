@@ -1,7 +1,7 @@
 const pantalones = [
   {
     title: "Jeans",
-    category: "Pantalones",
+    category: "Jeans",
     size: ["XS", "S", "M"],
     color: [
       { colorName: "Verde", colorValue: "#6BFF33" },
