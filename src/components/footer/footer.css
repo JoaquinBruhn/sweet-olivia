@@ -3,7 +3,7 @@
   bottom: 0;
   padding: 20px 0;
   color: white;
-  background-color: black;
+  background-color: var(--quaternary-color);
 }
 
 .footerLinks {
@@ -17,8 +17,8 @@
   display: flex;
   text-align: start;
   text-decoration: none;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--quaternary-color);
+  color: var(--secondary-color);
   margin: 20px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .footerLinks > div > *:hover {
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 450px) {

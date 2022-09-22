@@ -7,8 +7,8 @@
 }
 
 .header {
-  color: white;
-  background-color: black;
+  color: var(--secondary-color);
+  background-color: var(--quaternary-color);
 }
 
 .siteTitle {
@@ -34,7 +34,7 @@
 }
 
 .navlink {
-  border-bottom: 6px solid black;
+  border-bottom: 6px solid var(--quaternary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,27 +48,23 @@
 }
 
 .navlink:hover {
-  color: white;
+  color: var(--secondary-color);
 }
 
 .selected-navlink {
   border-color: rgb(193, 193, 193);
-  color: white;
+  color: var(--secondary-color);
 }
 
 .navWhatsApp {
   border: none;
-  background-color: #000;
+  background-color: var(--quaternary-color);
   margin-bottom: 0;
 }
 
 @media (max-width: 450px) {
   .navlink {
-    border-bottom: 3px solid black;
-  }
-  .selected-navlink {
-    border-color: rgb(193, 193, 193);
-    color: white;
+    border-bottom: 3px solid var(--primary-color);
   }
   .mainNav {
     height: 65px;
@@ -80,11 +76,7 @@
 
 @media (min-width: 451px) and (max-width: 1299px) {
   .navlink {
-    border-bottom: 3px solid black;
-  }
-  .selected-navlink {
-    border-color: rgb(193, 193, 193);
-    color: white;
+    border-bottom: 3px solid var(--primary-color);
   }
   .mainNav {
     height: 65px;
