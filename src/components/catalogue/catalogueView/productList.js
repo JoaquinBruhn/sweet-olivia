@@ -77,7 +77,7 @@ const ProductList = () => {
             })}
           </div>
         ) : (
-          <h1>Por el momento no hay productos de este tipo disponibles</h1>
+          <h1>Por el momento no hay productos de este tipo disponibles.</h1>
         )}
       </div>
     </div>

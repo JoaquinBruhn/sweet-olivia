@@ -1,22 +1,20 @@
 const pantalones = [
   {
-    title: "Jeans",
+    title: "Pantalon Jean ejemplo",
     category: "Jeans",
-    size: ["XS", "S", "M"],
+    size: ["Unico"],
     color: [
-      { colorName: "Verde", colorValue: "#6BFF33" },
-      { colorName: "Rojo", colorValue: "#F20505" },
-      { colorName: "Celeste", colorValue: "#05F2EB" },
+      { colorName: "Azul", colorValue: "#6571A0" },
     ],
-    price: 22,
+    price: "7.499",
     discount: false,
     picture: [
-      "https://media.istockphoto.com/id/938486228/es/foto/jeans-casuales-pantalones-aislado-sobre-fondo-blanco.webp?s=612x612&w=is&k=20&c=RzFcu9UiXRHvTZVy3tq_Q-yLeAdu_bNDdBNJ-4dSuiE=",
-      "https://media.istockphoto.com/id/938486228/es/foto/jeans-casuales-pantalones-aislado-sobre-fondo-blanco.webp?s=612x612&w=is&k=20&c=RzFcu9UiXRHvTZVy3tq_Q-yLeAdu_bNDdBNJ-4dSuiE=",
-      "https://media.istockphoto.com/id/938486228/es/foto/jeans-casuales-pantalones-aislado-sobre-fondo-blanco.webp?s=612x612&w=is&k=20&c=RzFcu9UiXRHvTZVy3tq_Q-yLeAdu_bNDdBNJ-4dSuiE=",
+      "https://i.postimg.cc/K84HL8YW/062091az-2.jpg",
+      "https://i.postimg.cc/Gpyg7gGJ/062091az-3.jpg"
+      
     ],
     description:
-      "Pantalones hechos de piel de pantalon de la mas alta calidad. Todos los pantalones utilizados para su produccion fueron alimentados con fibra de primera.",
+      "Pantalon usado en forma de muestra.",
     stock: 63,
   },
 ];

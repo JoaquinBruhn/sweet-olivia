@@ -1,21 +1,18 @@
 const remerones = [
   {
-    title: "Remerones",
+    title: "Remeron Blanco",
     category: "Remerones",
     size: ["XS", "S", "M"],
     color: [
-      { colorName: "Verde", colorValue: "#6BFF33" },
-      { colorName: "Rojo", colorValue: "#F20505" },
-      { colorName: "Celeste", colorValue: "#05F2EB" },
+      { colorName: "Blanco", colorValue: "#EDEEF2" },
     ],
-    price: 11,
+    price: "5.999",
     discount: false,
     picture: [
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
+      "https://i.postimg.cc/3wWM1Zx3/IMG-9121.jpg",
+      "https://i.postimg.cc/3R4T8Fst/IMG-7723.jpg"
     ],
-    description: "Es una remera loco, no hay mucho mas.",
+    description: "Remeron super cómodo para usar de entre casa",
     stock: 13,
   },
 ];
