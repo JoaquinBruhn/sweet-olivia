@@ -20,6 +20,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/catalogo" element={<ProductList />}></Route>
+            <Route exact path="/catalogo/:homeFilter" element={<ProductList />}></Route>
             <Route exact path="/itemDetail/:itemTitle" element={<ProductDetail />}></Route>
           </Routes>
         </main>
