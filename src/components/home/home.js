@@ -43,7 +43,7 @@ const Home = () => {
             <div>
               <h2>1</h2>
             </div>
-            <p>Elegí los productos que te interesen a través de nuestor catálogo.</p>
+            <p>Elegí los productos que te interesen a través de nuestro catálogo.</p>
           </Col>
           <Col>
             <div>
@@ -86,7 +86,7 @@ const Home = () => {
             </span>
             <div className="svgText">
               <h5>ENVIOS A TODO EL PAÍS</h5>
-              <p>Envios a traves de Correo Argentino</p>
+              <p>A traves de Correo Argentino </p>
             </div>
           </Col>
           <Col className="logosSVG">
@@ -114,7 +114,7 @@ const Home = () => {
               </svg>
             </span>
             <div className="svgText">
-              <h5>CAMBIOS Y DEVOLUCIONES</h5>
+              <h5>DEVOLUCIONES</h5>
               <p>Via WhatsApp</p>
             </div>
           </Col>

@@ -1,16 +1,16 @@
 .productInfo {
-  padding: 0 5%;
+  padding: 25px 5%;
 }
 
 .productInfo > * {
   text-align: start;
-  margin: 0 0 50px 116px;
+  margin: 0 0 40px 80px;
 }
 
 .productTitle {
   font-size: 46px;
   text-align: start;
-  margin: 20px 0;
+  margin-bottom: 10px;
 }
 
 .productPrice {
@@ -23,6 +23,12 @@
 }
 
 .productSizeTitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.productColorTitle {
+  margin-bottom: 10px;
   font-size: 30px;
 }
 
@@ -51,8 +57,15 @@
   text-align: start;
 }
 
-.productColorTitle {
-  font-size: 30px;
+.btnWsp {
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  width: 100%;
+  height: 70px;
+  letter-spacing: 2px;
+  background-color: var(--tertiary-color);
+  margin-top: 40px;
 }
 
 .detailDescriptionContainer {
@@ -63,27 +76,88 @@
   font-size: 20px;
 }
 
-.btnWsp {
-  border: none;
-  text-align: center;
-  font-size: 28px;
-  width: 50%;
-  height: 70px;
-  background-color: var(--tertiary-color);
-}
-
-@media (min-width: 780px) and (max-width: 1299px) {
-  .productInfo > * {
-    margin: 0 0 30px 100px;
-  }
-}
-
 @media (max-width: 450px) {
+
   .productInfo > * {
-    margin: 20px;
+    margin: 0 0 30px 10px;
+  }
+
+  .productTitle {
+    margin-top: 5px;
+    font-size: 28px;
+  }
+
+  .productPrice {
+    font-size: 26px;
+  }
+  
+  .productSizeTitle {
+    font-size: 22px;
+  }
+
+  .productColorTitle {
+    font-size: 22px;
   }
 
   .detailDescriptionContainer > p {
+    font-size: 18px;
+  }
+
+  .wspContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .btnWsp {
+    text-align: center;
     font-size: 24px;
   }
+}
+
+@media (min-width: 451px) and (max-width: 779px) {
+
+  .productTitle {
+    margin-top: 30px;
+  }
+
+  .productInfo > * {
+    margin: 0 0 40px 0;
+  }
+  .btnWsp {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 780px) and (max-width: 1299px) {
+
+  .productInfo > * {
+    margin: 0 0 40px 60px;
+  }
+
+}
+
+@media (min-width: 1366px ) {
+
+  .productInfo > * {
+    margin: 0 0 25px 40px;
+  }
+
+  .productTitle {
+    font-size: 38px;
+  }
+
+  .productPrice {
+    font-size: 36px;
+  }
+  
+  .productSizeTitle {
+    font-size: 26px;
+  }
+
+  .productColorTitle {
+    font-size: 26px;
+  }
+  
 }

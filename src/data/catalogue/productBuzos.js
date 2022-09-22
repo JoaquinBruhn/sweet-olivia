@@ -15,7 +15,8 @@ const buzos = [
       "https://res.cloudinary.com/dyepojt8s/image/upload/v1663371026/Sweet%20Olivia/IMG_5271_ybszi6.jpg",
       "https://res.cloudinary.com/dyepojt8s/image/upload/v1663371025/Sweet%20Olivia/IMG_5277_veexgd.jpg",
     ],
-    description: "Buzos para el invierno, perfectos para el frio de la noche.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet",
     stock: 56,
   },
   {
@@ -34,7 +35,7 @@ const buzos = [
       "https://res.cloudinary.com/dyepojt8s/image/upload/v1663371025/Sweet%20Olivia/IMG_5277_veexgd.jpg",
       "https://res.cloudinary.com/dyepojt8s/image/upload/v1663371018/Sweet%20Olivia/IMG_5268_fzagif.jpg",
     ],
-    description: "Buzos para el invierno, perfectos para el frio de la noche.",
+    description: "odio mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit",
     stock: 56,
   },
 ];

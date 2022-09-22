@@ -1,19 +1,15 @@
 import React from "react";
-import UseWhatsapp from "whatsapp-react-component";
+import ReactWhatsapp from "react-whatsapp";
 import { number } from "../data/productData";
 
 const WhatsappMenu = ({ clsname, txt }) => {
   const message = "Hola Brenda! Tengo una duda sobre la página.";
 
-  const sendMessage = () => {
-    UseWhatsapp(number, message);
-  };
-
   return (
     <>
-      <p className={clsname} onClick={sendMessage}>
+      <ReactWhatsapp className={clsname} number={number} message={message}>
         {txt}
-      </p>
+      </ReactWhatsapp>
     </>
   );
 };
