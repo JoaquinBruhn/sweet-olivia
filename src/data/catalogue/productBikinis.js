@@ -1,21 +1,25 @@
 const bikinis = [
   {
-    title: "Bikinis",
+    title: "Bikinis Varios Estilos",
     category: "Bikinis",
     size: ["XS", "S", "M"],
     color: [
-      { colorName: "Verde", colorValue: "#6BFF33" },
-      { colorName: "Rojo", colorValue: "#F20505" },
-      { colorName: "Celeste", colorValue: "#05F2EB" },
+      { colorName: "Atigrado", colorValue: "#C8C1B8" },
+      { colorName: "Azulado", colorValue: "#8386F0" },
+      { colorName: "Verde Agua", colorValue: "#76AB8D" },
+      { colorName: "Celeste", colorValue: "#4D9FE3"}
     ],
-    price: 11,
+    price: "3.999",
     discount: false,
     picture: [
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
-      "https://media.istockphoto.com/id/471188329/es/foto/camiseta-roja-frontal-en-blanco-con-trazado-de-recorte.webp?s=612x612&w=is&k=20&c=f6oiR817cYR1sOVTRPwA58w4P3r0Ar_3x0hafQKWMpM=",
+      "https://i.postimg.cc/dV67c5Br/IMG-0394.jpg",
+      "https://i.postimg.cc/KjtzqfjK/IMG-2126.jpg",
+      "https://i.postimg.cc/BvvjS2Yy/IMG-2127.jpg",
+      "https://i.postimg.cc/66ZypWc9/IMG-2132.jpg",
+      "https://i.postimg.cc/GpSHH96p/IMG-8964.jpg",
+      
     ],
-    description: "Lorem",
+    description: "Bikinis de diferentes colores ideales para el Verano.",
     stock: 13,
   },
 ];
