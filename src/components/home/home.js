@@ -24,7 +24,7 @@ const Home = () => {
             return null;
           }
           return (
-            <Col className="homeCat" key={catImg.category}>
+            <div className="homeCat" key={catImg.category}>
               <Link to={`/catalogo/${catImg.category}`}>
                 <div style={{ backgroundImage: `url(${catImg.picture[0]})` }}>
                   <div className="mask">
@@ -32,7 +32,7 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-            </Col>
+            </div>
           );
         })}
       </div>
@@ -124,17 +124,19 @@ const Home = () => {
         <h2>SOBRE SWEET OLIVA</h2>
         <div className="aboutText">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
-            odio mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-            interdum, ac aliquet odio mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-            libero et velit interdum, ac aliquet odio mattis.
+            Sweet Olivia es una marca de indumentaria y accesorios femeninos y para cualquiera que se sienta
+            identificado con nuestros productos. Fue fundada en la ciudad de Buenos Aires, Argentina en el año 2019.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
-            odio mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-            interdum, ac aliquet odio mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
-            libero et velit interdum, ac aliquet odio mattis.
+            Este pequeño emprendimiento comenzó con una bolsita de accesorios y hoy en día es una estantería llena de
+            diferentes productos desde ropa para salir, ropa deportiva, zapatos, mochilas y carteras, entre muchas más.
+            Proyectamos seguir creciendo y en un futuro lograr conseguir una tienda física.
           </p>
+          <p>
+            Cuando fue el momento de elegir el nombre para la marca, sin dudarlo, pensamos en esa persona maravillosa
+            que hoy no está en este plano, pero seguramente nos está acompañando cada día y en cada decisión.
+          </p>
+          <p>Te invitamos a que te sientas libre y cómoda con lo que uses, porque "Vivir libre, o nada".</p>
         </div>
       </div>
     </div>
