@@ -3,7 +3,7 @@
 }
 
 .homeBody > div {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .homeCategories {
@@ -126,43 +126,10 @@
   font-size: 22px;
 }
 
-@media (min-width: 780px) and (max-width: 1299px) {
-  .homeCategories {
-    grid-template-columns: repeat(3, 240px);
-    grid-gap: 30px;
-  }
-
-  .homeCat > a > div {
-    background-size: cover;
-    background-position: center;
-    height: 240px;
-    width: 240px;
-  }
-}
-
-@media (min-width: 451px) and (max-width: 779px) {
-  .homeCategories {
-    grid-template-columns: repeat(2, 240px);
-    grid-gap: 30px;
-  }
-
-  .homeCat > a > div {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 200px;
-  }
-
-  .mask > p {
-    bottom: 20px;
-    left: 20px;
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 450px) {
+  
   .homeBody > div {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .homeCategories {
@@ -188,7 +155,7 @@
   }
 
   .homeHowTo > h2 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 50px;
   }
 
@@ -204,20 +171,73 @@
     margin: 20px 0;
   }
 
+  .howToSite > div > p {
+    font-size: 18px;
+  }
+
   .howToBuy {
     flex-direction: column;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .logosSVG {
     margin-top: 70px;
   }
 
+  .svgText > h5 {
+    font-size: 18px;
+  }
+
   .homeInstructions > h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .aboutText {
     margin: 50px;
     font-size: 16px;
   }
+
+}
+
+@media (min-width: 451px) and (max-width: 779px) {
+
+  .homeBody > div {
+    margin-bottom: 60px;
+  }
+
+  .homeCategories {
+    grid-template-columns: repeat(2, 240px);
+    grid-gap: 30px;
+  }
+
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  .mask > p {
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1299px) {
+
+  .homeCategories {
+    grid-template-columns: repeat(3, 240px);
+    grid-gap: 30px;
+  }
+
+  .homeCat > a > div {
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 240px;
+  }
+
 }

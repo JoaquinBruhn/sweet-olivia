@@ -13,5 +13,6 @@
 @media (max-width: 450px) {
   .searchBox {
     width: 75%;
+    background-color: rgb(250, 250, 250);
   }
 }

@@ -16,7 +16,7 @@ const Navigation = () => {
         <NavLink to="/catalogo" className={({ isActive }) => (isActive ? "selected-navlink navlink" : "navlink")}>
           Catálogo
         </NavLink>
-        <WhatsappMenu clsname={"navlink navWhatsaap"} txt={"Whatsapp"} />
+        <WhatsappMenu clsname={"navlink navWhatsApp"} txt={"Whatsapp"} />
         <a href="https://www.instagram.com/sweetolivia.ok" className="navlink" target="_blank" rel="noreferrer">
           Instagram
         </a>
