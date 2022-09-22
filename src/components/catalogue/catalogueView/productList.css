@@ -33,15 +33,19 @@
 }
 
 .catsDropdown > button {
+  border: none;
+  box-shadow: none !important;
   border-radius: 0;
   width: 100%;
   font-size: 26px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: var(--secondary-color);
   box-shadow: none;
 }
 
 .catsDropdown > button:focus {
+  border: none;
+  box-shadow: none !important;
   background-color: var(--primary-color);
 }
 
