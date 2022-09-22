@@ -121,7 +121,7 @@ const Home = () => {
         </Row>
       </Container>
       <div className="homeInstructions">
-        <h2>SOBRE SWEET OLIVA</h2>
+        <h2>SOBRE SWEET OLIVIA</h2>
         <div className="aboutText">
           <p>
             Sweet Olivia es una marca de indumentaria y accesorios femeninos y para cualquiera que se sienta

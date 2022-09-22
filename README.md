@@ -59,7 +59,7 @@ This project was made by a small team of 4 people, 2 in charge of the developmen
 
 ### UX designers
 
-- Antonio Estevez
+- [Antonio Estevez](https://www.linkedin.com/in/antonino-estevez-824007152/)
 - [Marina Bensusan](https://www.linkedin.com/in/marina-bensusan-290679144/)
 
 ### Front-end developers
