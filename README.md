@@ -20,6 +20,10 @@ Both Footer and Navbar can redirect you to the Home & Category sections, open Wh
 
 The app, as it was requested, is a purely front end site. The `data` folder serves as a storage and it´s designed so that the app can be updated by just editing, deleting or adding objects to this folder.
 
+### Disclaimer
+
+The DEMO version of the app can be found [here](https://sweet-olivia-eight.vercel.app/), however the Whatsapp redirect can not be used properly since the number it looks for has been set to a generic one (like 123456789). If you would like to test that specific functionality it is recomended that you copy the proyect and change the number on /src/data/productData to your own number and test it localy.
+
 ### Storage (data folder)
 
 - catalogue: It stores one JS file for each category of product. A new file within it can be created if the user wants to introduce a new category.
