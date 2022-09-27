@@ -4,12 +4,12 @@ import remeras from "./catalogue/productRemeras";
 import vestidos from "./catalogue/productVestidos";
 import pantalones from "./catalogue/productPantalones";
 import remerones from "./catalogue/productRemerones";
-import bikinis from "./catalogue/productBikinis"
-import tops from "./catalogue/productTops"
+import bikinis from "./catalogue/productBikinis";
+import tops from "./catalogue/productTops";
 
-const productData = [...buzos, ...remeras,...vestidos, ...tops, ...bikinis, ...pantalones, ...remerones, ...otros];
+const productData = [...buzos, ...remeras, ...vestidos, ...tops, ...bikinis, ...pantalones, ...remerones, ...otros];
 
-export const cats = ["Todos", "Buzos", "Remeras","Remerones", "Jeans", "Bikinis", "Tops", "Otros"];
+export const cats = ["Todos", "Buzos", "Remeras", "Remerones", "Jeans", "Bikinis", "Tops", "Otros"];
 
 export const mainSlider = [
   {
@@ -24,7 +24,6 @@ export const mainSlider = [
     title: "Slider 3",
     image: "https://i.postimg.cc/N0FvNyTc/Frame-19.png",
   },
-  
 ];
 
 export const getProduct = (title) => {
@@ -32,7 +31,7 @@ export const getProduct = (title) => {
   return searchedProd;
 };
 
-export const number = "+54 1178974932";
+export const number = "+54 123456789";
 
 export default productData;
 
